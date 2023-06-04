@@ -1,0 +1,121 @@
+@font-face {
+    font-family: font;
+    src: url(DS-DIGIB.TTF);
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border: 0; outline: 0;
+}
+:root{
+    --Blabk : #080202;
+    --Pink1 : #ff86cd;
+    --Pink2 : #FCE9F1;
+}
+body{
+    background-color: var(--Pink2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: font;
+    user-select: none;
+    /* color: #1e1e1e; */
+}
+.sun{
+    position: absolute;
+    font-size: 6rem;
+    color: rgb(161, 161, 0);
+    transform: translate(7em,-2.85em);
+}
+.moon{
+    position: absolute;
+    font-size: 6rem;
+    color: rgb(202, 202, 202);
+    transform: translate(7em,-2.85em);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.clock{
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 144.8px;
+    background-color: var(--Blabk);
+    border-radius: 4rem 4rem 2rem 2rem;
+}
+.hour{
+    padding: 1rem 2rem 1rem 0.5rem;
+    color: var(--Pink2);
+}
+.minutes{
+    padding: 1rem 2rem 1rem 0.5rem;
+    color: var(--Pink2);
+}
+.second{
+    padding: 1rem 2rem 1rem 0.5rem;
+    color: var(--Pink1);
+}
+.ampm{
+    color: var(--Pink1);
+    font-size: 3rem;
+    position: absolute;
+    transform: translate(17.2rem,1.3rem);
+}
+.date{
+    font-size: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 84.8;
+    background-color: var(--Blabk);
+    border-radius: 2rem 2rem 4rem 4rem;
+    margin-top: 0.5rem;
+}
+.date span{
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    color: var(--Pink2);
+}
+.changeTheme{
+    position: absolute;
+    bottom: 5rem;
+    font-size: 0.9rem;
+    padding: 1.1rem;
+    background-color: rgb(255, 50, 50);
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.changeTheme:hover{
+    box-shadow: 0 0 20px  rgb(255, 50, 50);
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+.blackBack{
+    background-color: var(--Blabk);
+}
+.blackColor{
+    color: var(--Blabk);
+}
+.pink1Back{
+    background-color: #fc52b5;
+}
+.pink1Color{
+    color: var(--Pink1);
+}
+.pink2Color{
+    color: var(--Pink2);
+}
+
+.secondAndAMPM{
+    color: #323232;
+}
